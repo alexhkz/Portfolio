@@ -17,22 +17,17 @@ closeElem.addEventListener('click', () => {
 // 			if (e.target) {
 // 				e.preventDefault();
 // 			}
-// 			// modal.style.display = 'block';
-// 			// document.body.style.overflow = 'hidden';
-// 			menu.classList.add('active');
+// 			modal.classList.add('active');
 // 		});
 
 // 		close.addEventListener('click', () => {
-// 			// modal.style.display = 'none';
-// 			// document.body.style.overflow = '';
-// 			menu.classList.remove('active');
+// 			modal.classList.remove('active');
 // 		});
 
 // 		modal.addEventListener('click', (e) => {
-// 			if (e.target !== '.menu.active') {
-// 				// modal.style.display = 'none';
-// 				// document.body.style.overflow = '';
-// 				menu.classList.remove('active');
+// 			if (e.target === '.menu.active') {
+// 				document.querySelector('.menu.active').classList.remove('active');
+// 				this.classList.remove('active');
 // 			}
 // 		});
 // 	}
