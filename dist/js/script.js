@@ -38,3 +38,10 @@ closeElem.addEventListener('click', () => {
 
 // 	bindModal(hamburger, menu, closeElem);
 // });
+
+const counters = document.querySelectorAll('.skills__ratings-counter'),
+	lines = document.querySelectorAll('.skills__ratings-line span');
+
+counters.forEach((item, i) => {
+	lines[i].style.width = item.innerHTML;
+});
